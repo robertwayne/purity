@@ -1,0 +1,10 @@
+<nav class="pagination text-gray-300 gap-4 flex">
+    {% if paginator.next %}
+    <a class="next transition hover:text-orange-400" href="{{ paginator.next }}">‹ Previous</a>
+    {% endif %}
+
+    <!-- This prevents prettier from making the Tera blocks ugly. -->
+    {% if paginator.previous %}
+    <a class="previous transition hover:text-orange-400" href="{{ paginator.previous }}">Next ›</a>
+    {% endif %}
+</nav>

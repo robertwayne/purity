@@ -1,0 +1,26 @@
+<footer class="flex flex-col justify-center items-center mb-4 mt-2">
+    <div class="font-bold flex gap-4 justify-center">
+
+        {% if config.extra.purity_email %}
+            <a class="transition hover:text-orange-400" href="mailto:{{ config.extra.purity_email}}">Contact</a>
+        {% endif %}
+
+        {% if config.extra.purity_github%}
+            <a
+                class="transition hover:text-orange-400"
+                href="https://github.com/{{ config.extra.purity_github }}"
+                target="_blank"
+                noreferrer
+                noopener
+                >GitHub</a
+            >
+        {% endif %}
+
+    </div>
+
+    <span class="text-gray-400">&copy; {{ now() | date(format="%Y") }} {{ config.extra.purity_author }}</span>
+
+    <span class="text-gray-500 ">Built with ❤ using 
+        <a class="font-bold transition hover:text-orange-400" href="https://www.getzola.org/" target="_blank" noreferrer noopener>Zola</a> and the <a class="font-bold transition hover:text-orange-400" href="https://github.com/robertwayne/purity" target="_blank" noreferrer noopener>Purity</a> theme.
+    </span>
+</footer>

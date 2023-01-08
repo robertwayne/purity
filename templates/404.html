@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Thoughts on Programming, Art, & Game Design" />
+
+        <link rel="preload" href="/PTSans.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/Nunito.woff2" as="font" type="font/woff2" crossorigin />
+
+        <link rel="stylesheet" href="{{ get_url(path="main.css") }}"/>
+
+        <title>{{ config.title }} | {{ config.extra.purity_subtitle }}</title>
+
+        {% block head_extend %}{% endblock %}
+    </head>
+
+    <body class="dark flex h-full w-full flex-grow flex-col items-center bg-gray-900 text-gray-300">
+        {% include "partials/header.html" %}
+
+        <section
+            class="flex h-full w-full flex-grow lg:w-2/3 2xl:w-1/2 flex-col items-center text-lg gap-2 text-center"
+        >
+            {% include "partials/divider.html" %}
+
+            <h2 class="text-2xl mt-2 text-center">404</h2>
+            <p class="">The page you were trying to get to does not exist.</p>
+            <a class="font-bold transition hover:text-orange-400" href="/">Back to Home</a>
+        </section>
+
+        {% include "partials/footer.html" %}
+    </body>
+</html>

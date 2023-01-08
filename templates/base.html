@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Thoughts on Programming, Art, & Game Design" />
+
+        <link rel="preload" href="/PTSans.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/Nunito.woff2" as="font" type="font/woff2" crossorigin />
+
+        <link rel="stylesheet" href="/main.css" />
+
+        <title>{{ config.title }} | {{ config.extra.purity_subtitle }}</title>
+
+        {% block head_extend %}{% endblock %}
+    </head>
+
+    <body class="dark flex h-full w-full flex-grow flex-col items-center bg-gray-900 text-gray-300">
+        {% include "partials/header.html" %}
+
+        <section class="flex h-fit w-full flex-grow lg:w-2/3 2xl:w-1/2">
+            {% block content %}{% endblock %}
+        </section>
+
+        {% include "partials/footer.html" %}
+    </body>
+</html>

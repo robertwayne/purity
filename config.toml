@@ -1,0 +1,14 @@
+base_url = "https://blog.sombia.com"
+build_search_index = false
+compile_sass = false
+title = "Purity"
+
+[markdown]
+highlight_code = true
+
+[extra]
+
+purity_author = "Rob Wagner"
+purity_email = "rob@sombia.com"
+purity_github = "robertwayne"
+purity_subtitle = "A minimalistic, dark blog theme."

@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="flex flex-grow flex-col items-center">
+    {% for page in paginator.pages %}
+        <div class="flex h-full w-full flex-grow flex-col items-center">
+            {% include "partials/divider.html" %}
+
+            <h2 class="mt-2 text-center">
+                <a
+                    class="text-2xl font-bold transition hover:text-orange-400"
+                    href="{{ page.permalink }}"
+                >
+                    {{ page.title }}
+                </a>
+            </h2>
+
+            <span class="mb-2"
+                >Published
+                <span class="mb-4 text-center font-bold md:text-left"
+                    >{{ page.date | date(format="%B %_d, %Y", timezone="America/New_York") }}</span
+                ></span
+            >
+
+            {% include "partials/divider.html" %}
+
+            <article class="post prose h-full w-full flex-grow p-2 text-lg text-gray-300">
+                {{page.content | safe}}
+            </article>
+        </div>
+
+        {% include "partials/divider.html" %} 
+    
+    {% endfor %}
+
+    {% include "partials/paginator.html" %}
+    {% include "partials/divider.html" %}
+</div>
+
+{% endblock content %}
