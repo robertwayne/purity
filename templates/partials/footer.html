@@ -18,7 +18,11 @@
 
     </div>
 
-    <span class="text-gray-400">&copy; {{ now() | date(format="%Y") }} {{ config.extra.purity_author }}</span>
+    {% if config.extra.purity_author %}
+        <span class="text-gray-400">&copy; {{ now() | date(format="%Y") }} {{ config.extra.purity_author }}</span>
+    {% else %}
+        <span class="text-gray-400">&copy; {{ now() | date(format="%Y") }} {{ config.title }}</span>
+    {% endif %}
 
     <span class="text-gray-500 ">Built with ❤ using 
         <a class="font-bold transition hover:text-orange-400" href="https://www.getzola.org/" target="_blank" noreferrer noopener>Zola</a> and the <a class="font-bold transition hover:text-orange-400" href="https://github.com/robertwayne/purity" target="_blank" noreferrer noopener>Purity</a> theme.

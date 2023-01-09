@@ -15,7 +15,7 @@ Purity supports the following fields in your `config.toml`:
 
 ```toml
 [extra]
-purity_author = "Name / Alias" # Required (for copyright field)
+purity_author = "Name / Alias" # Optional (for copyright field; uses title otherwise)
 purity_email = "Email Address" # Optional (for contact link)
 purity_github = "GitHub Username" # Optional
 purity_tagline = "Short blog description / tagline" # Optional
