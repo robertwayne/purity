@@ -1,6 +1,6 @@
 # Purity
 
-Purity is a minimalistic, dark blog theme for [Zola](https://getzola.org/) built with [TailwindCSS](https://tailwindcss.com/).
+Purity is a *seriously* minimalistic blog theme for [Zola](https://getzola.org/) built with [TailwindCSS](https://tailwindcss.com/).
 
 <img src="./screenshot.png" align="center" alt="" />
 <br><br>
@@ -11,9 +11,11 @@ See the [Zola documentation](https://www.getzola.org/documentation/themes/instal
 
 ## Extra Fields
 
-Purity supports the following extra fields in your `config.toml` under the `[extra]` section:
+Purity supports the following fields in your `config.toml`:
 
 ```toml
+title = "Blog Title" # Required
+
 [extra]
 purity_author = "Name / Alias" # Required (for copyright field)
 purity_email = "Email Address" # Optional (for contact link)
