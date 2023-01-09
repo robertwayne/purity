@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="flex flex-grow flex-col items-center">
+<div class="flex flex-grow w-full flex-col items-center">
     {% for page in paginator.pages %}
         <div class="flex h-full w-full flex-grow flex-col items-center">
             {% include "partials/divider.html" %}
@@ -23,7 +23,7 @@
 
             {% include "partials/divider.html" %}
 
-            <article class="post prose h-full w-full flex-grow p-2 text-lg text-gray-300">
+            <article class=" max-w-[75ch] post prose h-full w-full flex-grow md:p-2 text-lg text-gray-300 flex flex-col items-center break-normal prose-p:px-4 prose-p:my-2">
                 {{page.content | safe}}
             </article>
         </div>
