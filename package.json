@@ -2,7 +2,7 @@
     "name": "purity",
     "version": "0.1.0",
     "repository": "https://github.com/robertwayne/purity",
-    "description": "A minimalistic, dark blog theme for Zola.",
+    "description": "A seriously minimalistic blog theme for Zola.",
     "author": "Rob Wagner <rob@sombia.com>",
     "license": "MIT OR Apache-2.0",
     "type": "module",
