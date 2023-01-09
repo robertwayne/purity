@@ -11,12 +11,14 @@ See the [Zola documentation](https://www.getzola.org/documentation/themes/instal
 
 ## Extra Fields
 
+Purity supports the following extra fields in your `config.toml` under the `[extra]` section:
+
 ```toml
 [extra]
-purity_author = "Your Name" # Required
-purity_email = "Your Email" # Optional
-purity_github = "Your GitHub Username" # Optional
-purity_subtitle = "A description / subtitle for your blog." # Optional
+purity_author = "Name / Alias" # Required (for copyright field)
+purity_email = "Email Address" # Optional (for contact link)
+purity_github = "GitHub Username" # Optional
+purity_tagline = "Short blog description / tagline" # Optional
 ```
 
 ## License
