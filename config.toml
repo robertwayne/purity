@@ -1,14 +1,11 @@
-base_url = "https://blog.sombia.com"
-build_search_index = false
-compile_sass = false
 title = "Purity"
+base_url = "https://blog.sombia.com"
 
 [markdown]
 highlight_code = true
 
 [extra]
-
 purity_author = "Rob Wagner"
 purity_email = "rob@sombia.com"
 purity_github = "robertwayne"
-purity_subtitle = "A minimalistic, dark blog theme."
+purity_tagline = "A minimalistic, dark blog theme."
