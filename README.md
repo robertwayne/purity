@@ -14,8 +14,6 @@ See the [Zola documentation](https://www.getzola.org/documentation/themes/instal
 Purity supports the following fields in your `config.toml`:
 
 ```toml
-title = "Blog Title" # Required
-
 [extra]
 purity_author = "Name / Alias" # Required (for copyright field)
 purity_email = "Email Address" # Optional (for contact link)
