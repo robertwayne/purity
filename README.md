@@ -1,6 +1,6 @@
 # Purity
 
-Purity is a minimalistic, dark blog theme for [Zola](https://www.getzola.org/) built with TailwindCSS.
+Purity is a minimalistic, dark blog theme for [Zola](https://getzola.org/) built with [TailwindCSS](https://tailwindcss.com/).
 
 <img src="./screenshot.png" align="center" alt="" />
 <br><br>
