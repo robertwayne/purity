@@ -1,0 +1,4 @@
+<div class="w-full not-prose">
+    {% set image = resize_image(path=path, width=width, height=height, op="scale", format="webp") %}
+    <img src="{{ image.url }}" alt="" class="w-full object-cover" />
+</div>
