@@ -21,6 +21,10 @@ purity_github = "GitHub Username" # Optional
 purity_tagline = "Short blog description / tagline" # Optional
 ```
 
+## Contributions
+
+I am open to contributions, but Purity is built specifically for my personal blog, so additional features which I do not personally want or need will not be merged. I encourage you to open an issue if you wish to make any substantial changes.
+
 ## License
 
 Purity source code is dual-licensed under either
