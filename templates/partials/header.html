@@ -2,11 +2,12 @@
     <h1 class="flex h-fit w-full md:w-fit justify-center text-4xl lg:justify-start">
         <a class="text-gray-400 mt-2 sm:landscape:ml-4 lg:ml-0" href="/">{{ config.title }}</a>
     </h1>
-    {% if config.extra.purity_subtitle %}
-    <span
-        class="text-gray-500 text-sm w-full flex justify-center md:justify-end md:pt-8 mr-4 lg:mr-0"
-    >
-        .:: {{ config.extra.purity_subtitle }} ::.</span
-    >
+
+    {% if config.extra.purity_tagline %}
+        <span
+            class="text-gray-500 text-sm w-full flex justify-center md:justify-end md:pt-8 mr-4 lg:mr-0"
+        >
+            .:: {{ config.extra.purity_tagline }} ::.</span
+        >
     {% endif %}
 </nav>
