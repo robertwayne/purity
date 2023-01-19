@@ -1,5 +1,5 @@
 name = "Purity"
-description = "A minimalistic, dark blog theme."
+description = "A seriously minimalistic blog theme for Zola."
 license = "MIT or Apache-2.0"
 homepage = "https://github.com/robertwayne/purity"
 min_version = "0.16"

@@ -1,4 +1,4 @@
-*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(code, pre, iframe, canvas, img, svg, video):not(svg *, code *, pre *, symbol *)) {
     all: unset;
     display: revert;
 }

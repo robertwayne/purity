@@ -13,7 +13,9 @@
 
     {% include "partials/divider.html" %}
 
-    <article class=" max-w-[75ch] post prose h-full w-full flex-grow md:p-2 text-lg text-gray-300 flex flex-col items-center break-normal prose-p:px-4 prose-p:my-2">
+    <article
+        class="max-w-[75ch] post prose h-full w-full flex-grow md:p-2 text-lg text-gray-300 flex flex-col items-center break-normal prose-p:px-4 prose-p:my-2 prose-headings:text-gray-300"
+    >
         {{page.content | safe}}
     </article>
 
