@@ -4,3 +4,4 @@ deploy.sh
 node_modules
 public
 static/main.css
+pnpm-lock.yaml
